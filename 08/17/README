@@ -1,0 +1,16 @@
+练习题目来自：Crossin的编程教室
+Quiz1:
+求所有不超过200的N值，N的平方是具有对称性的回文数。所谓回文数就是将一个数字从左向右与从右向左读是一样的，例如34543和1234321都是回文数。例如：1，2，3，11…
+
+Quiz2:
+from.txt是一个混杂了英文单词和中文的文本文件。把from.txt里的文本复制到to.txt里，要求只复制其中的英文单词，并按照字母序排序（提示：试试list的sort方法）
+例：
+# Filename: from.txt
+Hello Mr.张，welcome you to 南京。
+
+# Filename: to.txt
+Hello
+Mr
+to
+welcome
+you

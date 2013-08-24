@@ -18,6 +18,7 @@ pygame.display.set_caption('Hello, World!')
 # 加载并转换图像
 img1 = pygame.image.load('bg.jpg').convert()
 img2 = pygame.image.load('bg2.jpg').convert()
+plane = pygame.image.load('plane.png').convert()
 background = img1
 
 # 进入游戏主循环
@@ -35,5 +36,9 @@ while True:
                 background = img1
     # 将背景图画上去
     screen.blit(background,(0,0))
+    x, y = pygame.mouse.get_pos()
+    x -= plane.get_width()/2
+    y -= plane.get_height()/2
+    screen.blit(plane,(x, y))
     # 刷新画面
     pygame.display.update()
